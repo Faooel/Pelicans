@@ -1,5 +1,5 @@
 # Pelicans
 
-Site pour passage jury Epitech, en vus d'intégrer une formation dans la Codding school d'Epitech Nice.
+Mon premier site en HTML, CSS. création en vue d'un passage devant un jury d'Epitech, pour intégrer une formation dans la Coding school d'Epitech Nice.
 
-Site sur ma passion concernant la F1.
+Le sujet du site porte sur la F1 et notamment sur l'écurie Renaul F1/Alpine, ainsi que sur le pilote Fernando Alonso.
