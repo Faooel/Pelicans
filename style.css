@@ -1,3 +1,9 @@
 body {
     background-color: #112339; 
 }
+
+#rectangle {
+    width: 100px;
+    height: 50px;
+    background: white;
+}
