@@ -3,7 +3,7 @@ body {
 }
 
 #rectangle {
-    width: auto;
-    height: auto;
+    width: 500px;
+    height: 50px;
     background: white;
 }
