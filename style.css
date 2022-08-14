@@ -1,14 +1,14 @@
 body {
     background-color: #112339; 
+    margin: 0%;
 }
 
 #rectangle {
-    width: 1865px;
-    height: 45px;
-    background: white;
-    margin-top: -22px;
-    margin-left: -10px;
-    margin-right: -px;
+       width: auto;
+       height: auto;
+       background: white;
+       margin-top: -21px;
+       margin-right: -5%;
 }
 
 h1 {
