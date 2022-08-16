@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #112339; 
+}
+
+#top-bar-blue {
+    width: auto;
+    height: 2vh;
+    background: #001D6E;
+}
+
+#top-bar-white {
+    width: auto;
+    height: 2vh;
+    background: white;
+}
+
+#top-bar-red {
+    width: auto;
+    height: 2vh;
+    background: #E6001F;
+}
+
+.logo-component {
+    text-align: center;
+    width: 100vw;
+    height: 15vh;
+    margin: 45px 0px 0px 0px;
+}
+
+.logo-alpine {
+    width: 13vh;
+}
+
+.prg1-component {
+    width: 100vw;
+    height: auto;
+    margin: 15px 0px 0px 0px;
+    display: flex;
+}
+
+.prg1 {
+    width: 100vw;
+    height: 25vh;
+}
+
+.prg1-texte {
+    font-size: 30px;
+    text-align: justify;
+    padding: 10px 0px 0px 15px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.prg1-img {
+    margin: 35px 0px 0px 0px;
+    width: 35vh;
+}
+
+.prg2-component {
+    width: 100vw;
+    height: auto;
+    padding: 25px 0px 0px 0px;
+}
+
+.prg2-texte {
+    font-size: 25px;
+    text-align: justify;
+    padding: 80px 30px 60px 15px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.prg3-component {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+    height: auto;
+}
+
+.prg3-texte1 {
+    font-size: 25px;
+    text-align: justify;
+    padding: 0px 30px 25px 10px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.prg3-texte2 {
+    font-size: 25px;
+    text-align: justify;
+    padding: 0px 30px 25px 10px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.prg3-img {
+    overflow: hidden;
+    height: 100%;
+    width: auto;
+    padding: 0px 0px 0px 10px;
+    border-radius: 50px;
+}
