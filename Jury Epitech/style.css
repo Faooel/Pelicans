@@ -21,7 +21,7 @@ body {
 
 .lauda-component {
     width: 100vw;
-    height: 50vh;
+    height: 45vh;
 }
 
 .lauda-citation {
@@ -107,7 +107,7 @@ body {
 .img1 {
     border-radius: 95px;
     width: 50vw;
-    padding: 68px 0px 20px 30px;
+    padding: 24px 0px 20px 30px;
 }
 
 .img2-component {
