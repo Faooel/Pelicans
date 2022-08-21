@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <header>
+        <div class="banner"></div>
+    </header>
+
+
+    <div class="a-component">
+        <img class="a-img" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg"
+             alt="y'a rien">
+        <p class="a-txt">Être une mouette, c'est chouette ! Je peux voler, chasser et surtout chier sur ces fdp de
+            touriste. Mais avant de leur chier dessus je prend un bon repas bien gras pour avoir la chiasse</p>
+    </div>
+
+    <div class="b-component">
+        <img class="b-img" src="https://cdn.discordapp.com/attachments/335052164462411777/1010200580335091722/unknown.png"
+             alt="y'a rien">
+        <p class="b-txt">Je suis Gaï Sensei, et je pêche vos grosse daronne à la main. Vous voulez savoir mon secret ? J'ai une grosse b*te</p>
+
+    </div>
+
+    <div class="c-component">
+        <img class="c-img" src="https://cdn.discordapp.com/attachments/1001054432873676841/1007641210128707755/unknown.png"
+             alt="y'a rien">
+        <p class="c-txt">Arrête de me regarder, ça me gêne. Surtout que là, quand tu me regardes ça me fais de l'effet.... J'ai envie de clic sur valorant...</p>
+    </div>
+
+</body>
+</html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .banner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        width: 100%;
+        height: 100px;
+        background-color: #ffdd00;
+    }
+
+    body {
+        height: 300vh;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        background-color: #2a2a8c;
+    }
+
+    .a-component {
+        position: fixed;
+        margin-top: 100px;
+        height: 100vh;
+        width: 100vw;
+        background-color: #2a2a8c;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .b-component {
+        position: fixed;
+        margin-top: 100px;
+        height: 100vh;
+        width: 100vw;
+        background-color: #2a2a8c;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .c-component {
+        position: fixed;
+        margin-top: 100px;
+        height: 100vh;
+        width: 100vw;
+        background-color: #2a2a8c;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .a-component .a-img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .b-component .b-img {
+        height: 250px;
+        width: 200px;
+    }
+
+    .c-component .c-img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .a-component .a-txt {
+        width: 300px;
+        overflow-wrap: break-word;
+    }
+
+    .b-component .b-txt {
+        width: 300px;
+        overflow-wrap: break-word;
+    }
+
+    .c-component .c-txt {
+        width: 300px;
+        overflow-wrap: break-word;
+    }
+</style>
+
+<script>
+    const aComponent = document.querySelector('.a-component');
+    const bComponent = document.querySelector('.b-component');
+    const cComponent = document.querySelector('.c-component');
+    aComponent.style.opacity = "1";
+    bComponent.style.opacity = "0";
+    cComponent.style.opacity = "0";
+    let currentComponent = aComponent;
+    
+    function resetOpacity() {
+        aComponent.style.opacity = "0";
+        bComponent.style.opacity = "0";
+        cComponent.style.opacity = "0";
+    }
+
+    function switchComponent() {
+        if (currentComponent === aComponent)
+            currentComponent = bComponent;
+        else if (currentComponent === bComponent)
+            currentComponent = cComponent;
+        else if (currentComponent === cComponent)
+            currentComponent = aComponent;
+    }
+
+    function manageComponent(percent, delta) {
+        if (percent >= 0.99 && delta > 0) {
+            resetOpacity();
+            switchComponent();
+            window.scrollTo(0, 0);
+        } else if (percent <= 0.01 && delta < 0) {
+            resetOpacity();
+            switchComponent();
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+    }
+
+    function changeOpacityOfCurrentComponent(percent) {
+        if (percent < 0.5) {
+            const limit = 0.5 / 100;
+            currentComponent.style.opacity = ((percent / limit) / 100).toString();
+        } else if (percent >= 0.5) {
+            const limit = 0.5 / 100;
+            currentComponent.style.opacity = (1 - ((percent - 0.5) / limit) / 100).toString();
+        }
+    }
+
+    window.addEventListener('wheel', function (e) {
+        const {scrollTop, clientHeight} = document.documentElement;
+        window.scrollTo(0, scrollTop + e.deltaY);
+        changeOpacityOfCurrentComponent(scrollTop / (document.documentElement.scrollHeight - clientHeight));
+        manageComponent(scrollTop / (document.documentElement.scrollHeight - clientHeight), e.deltaY);
+    });
+</script>

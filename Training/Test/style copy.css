@@ -1,16 +1,20 @@
 * {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+    margin: 0;
+    padding: 0;
 }
 
 body {
+    height: 600vh;
     background-color: #112339; 
+    overflow-y: hidden;
 }
 
 #top-bar {
-    font-size: 145%;
-    width: auto;
+    z-index: 1;
+    font-size: 100%;
+    width: 100%;
     background: white;
+    position: fixed;
 }
 
 .title-f1 {
@@ -19,26 +23,21 @@ body {
     padding: 5px 0px 5px 0px
 }
 
-.img-F170 {
-    height: 55vw;
-    text-align: center;
-    object-fit: cover;         
-    object-position: 100% 50%;   
-    object-position: 50% 100%; 
-}
-
 .lauda-component {
+    position: fixed;
+    height: 100vh;
     width: 100vw;
-    height: 65vh;
+    margin-top: 55px;
 }
 
 .lauda-citation {
-    display: flex;
+    height: 2000px;
+    background: #112339; 
 }
 
 .lauda-citation-img {
     width: 241px;
-    padding: 100px 0px 0px 0px
+    padding: 250px 0px 0px 0px;
 }
 
 .lauda-citation-texte {
@@ -46,86 +45,90 @@ body {
     font-style: italic;
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 140px 30px 0px 0px;
+    padding: 324px 30px 0px 20px;
     text-align: justify;
 }
 
-.lauda-palmares {
-    position: static;
-    font-size: 15px;
-    font-style: italic;
-    color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: justify;
+.lauda-prg {
+    text-align: -webkit-center;
+    display: flex;
+    top: 0;
+    max-height: 100vh;
+    max-width: 134vh;
 }
 
-.prg1 {
+.story-f1-1 {
+    margin-top: 55px;
+    position: fixed;
     width: 100vw;
-    height: 50vh;
+    height: 100vh;
 }
 
-.prg1-texte {
+.story-f1-1-txt {
     font-size: 20px;
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 0px 40px 0px 40px;
+    padding: 25px 100px 50px 50px;
     text-align: justify;
 }
 
-.prg1-img {
-    text-align: center;
+.story-f1-1-img {
+    width: 475px;
+    border-radius: 35px;
+    height: 38%;
+    transform: translate(55%, 10%);
 }
-
-.img-alonso {
-    border-radius: 15vw;
-    width: 50vw;
-    padding: 70px 0px 70px 0px;
-}
-
-.prg2 {
-    width: 100vw;
-    height: 20vh;
-}
-
-.prg2-texte {
+.story-f1-1-txt2 {
     font-size: 20px;
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 0px 40px 0px 40px;
+    padding: 25px 100px 50px 50px;
     text-align: justify;
 }
 
-.prg3 {
+.story-f1-3 {
+    margin-top: 50px;
+    position: fixed;
     width: 100vw;
-    height: 15vh;
+    height: 100vh;
 }
 
-.prg3-texte {
+.story-f1-3-txt {
     font-size: 20px;
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 10px 40px 0px 40px;
+    padding: 150px 40px 0px 40px;
     text-align: justify;
 }
 
-.img1-component {
-    text-align: center;
-}
-
-.img1 {
+.story-f1-3-img1 {
     border-radius: 95px;
     width: 45vw;
     padding: 24px 10px 20px 30px;
+    text-align: center;
 }
 
-.img2-component {
-    text-align: right;
-}
-
-.img2 {
+.story-f1-3-img2 {
     border-radius: 95px;
     width: 45vw;
     padding: 0px 20px 15px 20px;
+    text-align: right;
+}
+
+.story-f1-4 {
+    margin-top: 50px;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.up {
+    color: white;
+}
+
+.logo-alpine {
+    width: 50vw;
+    height: 50vh;
 }
 
 /* SIDE BAR */
@@ -134,7 +137,7 @@ body {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    z-index: 3; /* Stay on top */
     top: 0;
     left: 0;
     background-color: #111; /* Black*/
@@ -170,11 +173,14 @@ body {
 
   /* Bouton side bar */
 .openbtn {
+    position: fixed;
+    top: 0;
+    z-index: 2;
     font-size: 20px;
     cursor: pointer;
     background-color: #111;
     color: white;
-    padding: 10px 15px;
+    padding: 13px 15px;
     border: none;
 }
 
@@ -182,3 +188,5 @@ body {
 .openbtn:hover {
     background-color: #444;
 }
+
+
