@@ -45,7 +45,7 @@ body {
     font-style: italic;
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 324px 30px 0px 20px;
+    padding: 295px 30px 0px 20px;
     text-align: justify;
 }
 
@@ -73,10 +73,9 @@ body {
 }
 
 .story-f1-1-img {
-    width: 475px;
+    width: 55vh;
     border-radius: 35px;
-    height: 38%;
-    transform: translate(55%, 10%);
+    margin-left: 30%;
 }
 .story-f1-1-txt2 {
     font-size: 20px;
@@ -87,32 +86,37 @@ body {
 }
 
 .story-f1-3 {
-    margin-top: 50px;
+    display: flex;
+    margin-top: 55px;
     position: fixed;
     width: 100vw;
     height: 100vh;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .story-f1-3-txt {
     font-size: 20px;
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 150px 40px 0px 40px;
+    padding: 55px 100px 60px 40px;
     text-align: justify;
 }
 
 .story-f1-3-img1 {
-    border-radius: 95px;
-    width: 45vw;
-    padding: 24px 10px 20px 30px;
-    text-align: center;
+    border-radius: 10%;
+    width: 439px;
+    height: 299px;
+    padding-left: 2%;
 }
 
 .story-f1-3-img2 {
-    border-radius: 95px;
-    width: 45vw;
-    padding: 0px 20px 15px 20px;
-    text-align: right;
+    border-radius: 10%;
+    width: 445px;
+    height: 296px;
+    margin-left: 13%;
 }
 
 .story-f1-4 {
@@ -120,30 +124,70 @@ body {
     position: fixed;
     width: 100vw;
     height: 100vh;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.up {
-    color: white;
+.up {transform: 
+    translate(525px, 590px);
+    height: 5vh;
+    width: 4vw;
 }
 
 .logo-alpine {
-    width: 50vw;
-    height: 50vh;
+    width: 12vw;
+    height: 19vh;
+    transform: translate(15vh, 40vh);
+}
+
+.alonso {
+    transform: translate(40vh, 38vh);
+    height: 15vh;
+    width: 15vw;
+}
+
+.senna {
+    transform: translate(65vh, 38vh);
+    height: 15vh;
+    width: 16vw;
+}
+
+#myBtn {
+    display: none; 
+    position: fixed;
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    background-color: red; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px;
+    border-radius: 10px; 
+    font-size: 18px; 
+}
+
+#myBtn:hover {
+    background-color: #555; 
 }
 
 /* SIDE BAR */
 
 .sidebar {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 3; /* Stay on top */
+    height: 100%; 
+    width: 0;
+    position: fixed; 
+    z-index: 3; 
     top: 0;
     left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    background-color: #111; 
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.5s; 
 }
 
   /* Liens side bar */
