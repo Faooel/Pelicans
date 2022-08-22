@@ -138,21 +138,21 @@ body {
 }
 
 .logo-alpine {
-    width: 12vw;
-    height: 19vh;
-    transform: translate(15vh, 40vh);
+    width: 15vw;
+    height: 22vh;
+    transform: translate(10vh, 40vh);
 }
 
 .alonso {
-    transform: translate(40vh, 38vh);
-    height: 15vh;
-    width: 15vw;
+    transform: translate(34vh, 39vh);
+    height: 18vh;
+    width: 18vw;
 }
 
 .senna {
-    transform: translate(65vh, 38vh);
-    height: 15vh;
-    width: 16vw;
+    transform: translate(60vh, 39vh);
+    height: 18vh;
+    width: 20vw;
 }
 
 /* SIDE BAR */
