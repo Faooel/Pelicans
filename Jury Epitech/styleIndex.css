@@ -123,11 +123,11 @@ body {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-content: center;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
 }
 
 .container-alpine {
@@ -137,7 +137,7 @@ body {
 
 .alpine-img {
     display: block;
-    width: 100%;
+    width: 89%;
     height: auto;
 }
 
@@ -182,6 +182,7 @@ body {
     display: block;
     width: 115%;
     height: auto;
+    transform: translate(-21px, 0px);
 }
 
 .overlay-alonso {
@@ -195,7 +196,8 @@ body {
     width: 115%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
+    background-color: #ad1519;
+    transform: translate(-21px, 0px);
 }
 
 .container-alonso:hover .overlay-alonso {
@@ -215,10 +217,49 @@ body {
     text-align: center;
 }
 
+.container-senna {
+    position: relative;
+    width: 15%;
+}
 
 .senna-img {
-    width: 25vh;
-    height: 19vh;
+    border-radius: 20px;
+    display: block;
+    width: 115%;
+    height: auto;
+    transform: translate(-21px, 0px);
+}
+
+.overlay-senna {
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 115%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #035a28;
+    transform: translate(-21px, 0px);
+}
+
+.container-senna:hover .overlay-senna {
+    opacity: 1;
+}
+
+.overlay-senna-txt {
+    color: white;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 /* SIDE BAR */
