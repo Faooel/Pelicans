@@ -9,11 +9,11 @@ body {
     overflow-y: hidden; 
 }
 
-#top-bar-green1 {
+#top-bar-red1 {
     z-index: 1;
     width: 100%;
     height: 2vh;
-    background: #00923E;
+    background: #AD1519;
     position: fixed;
 }
 
@@ -22,152 +22,154 @@ body {
     z-index: 1;
     width: 100%;
     height: 2vh;
-    background: #F8C100;
+    background: #FABD00;
     position: fixed;
 }
 
-#top-bar-green2 {
+#top-bar-red2 {
     margin-top: 4vh;
     z-index: 1;
     width: 100%;
     height: 2vh;
-    background: #00923E;
+    background: #AD1519;
     position: fixed;
 }
 
-<<<<<<< HEAD
-.senna1 {
-    z-index: 1;
+.alonso1 {
+    height: 90vh;
     position: fixed;
-    text-align: center;
-    margin-top: 8%;
+    margin-top: 8vh;
+}
+
+#alonso-patchwork {
+    margin: 0% -27% 0% 15%;
+    line-height: 0;
+    -webkit-column-count: 5;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    5;
+    -moz-column-gap:      0px;
+    column-count:         5;
+    column-gap:           0px;
+}
+
+#alonso-patchwork img {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.alonso2 {
+    height: 90vh;
     position: fixed;
-    width: 100vw;
-    height: 100vh;
+    margin-top: 8vh;
 }
 
 .logo-top {
-    margin-top: 3vh;
-    width: 10%;
-}
-
-.video-senna {
-    z-index: 99999;
-    margin-top: 50px;
-}
-
-.senna2 {
-    position: fixed;
     text-align: center;
-    margin-top: 55px;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
 }
 
-.senna2-prg1 {
+.logo {
+    height: 15vh;
+    width: auto;
+}
+
+.alonso2-prg1 {
     display: flex;
+    flex-direction: row-reverse;
 }
 
-.senna2-img-1 {
-    width: 22%;
-}
-
-.senna2-text1 {
-    font-size: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
-    padding: 4% 4% 0% 0%;
-    text-align: justify;
-}
-
-.senna2-prg2 {
-    padding: 0% 0% 0% 2%;
-    display: flex;
-}
-
-.senna2-img2 {
-    border-radius: 35px;
-    width: 33%;
-    padding: 0% 0% 0% 0%;
-}
-
-.senna2-text2 {
-    font-size: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
-    padding: 4% 4% 0% 2%;
-    text-align: justify;
-}
-
-.senna3 {
-    position: fixed;
-    text-align: center;
-    margin-top: 55px;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-}
-
-.senna3-prg1 {
-    margin-top: 5vh;
-    display: flex;
-}
-
-.senna3-text1 {
-    font-size: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
-    padding: 4% 4% 0% 0%;
-    text-align: justify;
-}
-
-.senna3-img1 {
+.alonso2-prg1-img {
     width: 30%;
 }
 
-.senna3-prg2 {
-    margin-left: 1%;
-    display: flex;
-}
-
-.senna3-img2 {
-    border-radius: 35px;
-    width: 30%;
-}
-
-.senna3-text2 {
-    font-size: 20px;
+.alonso2-prg1-txt {
+    height: 25%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
-    padding: 2% 4% 0% 2%;
+    font-size: 25px;
     text-align: justify;
+    padding: 5% 1% 0% 1%;
+    color: white;
 }
 
-.senna4 {
-    margin-top: 13vh;
+.alonso2-prg2 {
     display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.alonso2-prg2-txt {
+    height: 25%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    text-align: justify;
+    padding: 5% 1% 0% 1%;
+    color: white;
+}
+
+.alonso3 {
+    height: 90vh;
     position: fixed;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 8vh;
 }
 
-.senna4-img {
-    width: 25%;
-    border-radius: 50px;
+.alonso3-prg1 {
+    margin: 13% 3% 0% 3%;
+    display: flex;
 }
 
-.senna4-txt {
-    font-size: 20px;
+.alonso3-img1 {
+    width: 20%;
+    border-radius: 25px;
+}
+
+.alonso2-prg2-img {
+    width: 35%;
+}
+
+.alonso3-txt1 {
+    height: 25%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
-    padding: 3% 5% 5% 5%;
+    font-size: 25px;
     text-align: justify;
+    padding: 2% 1% 0% 1%;
+    color: white;
+}
+
+.alonso4 {
+    position: fixed;
+    margin: 0% 0% 0% 0%;
+    padding-top: 5vh;
+    height: 80vh;
+}
+
+.alonso4-txt1 {
+    height: 25%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    text-align: justify;
+    padding: 10% 3% 5% 3%;
+    color: white;
+}
+
+.alonso4-prg2 {
+    padding: 0% 2% 0% 3%;
+    display: flex;
+}
+
+.alonso4-img {
+    border-radius: 30px;
+    width: 28%;
+}
+
+.alonso4-txt2 {
+    height: 25%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    text-align: justify;
+    padding: 3% 1% 0% 1%;
+    color: white;
 }
 
 
-=======
->>>>>>> parent of ea3e73a (Senna V1)
 /* SIDE BAR */
 
 .sidebar {
