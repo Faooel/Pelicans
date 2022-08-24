@@ -1,14 +1,10 @@
 const carousel = document.querySelector('.carousel');
 const alpine1 = document.querySelector('.alpine-1');
 const alpine2 = document.querySelector('.alpine-2');
-const alpine3 = document.querySelector('.alpine-3');
-const alpine4 = document.querySelector('.alpine-4')
 
 carousel.style.opacity = '1';
 alpine1.style.opacity = '0';
 alpine2.style.opacity = '0';
-alpine3.style.opacity = '0';
-alpine4.style.opacity = '0';
 
 let currentComponent = carousel;
 
@@ -16,8 +12,6 @@ function resetOpacity() {
     carousel.style.opacity = "0"
     alpine1.style.opacity = "0"
     alpine2.style.opacity = "0"
-    alpine3.style.opacity = "0"
-    alpine4.style.opacity = "0"
 }
 
 function switchComponent() {
@@ -25,10 +19,7 @@ function switchComponent() {
         currentComponent = alpine1;
     else if (currentComponent === alpine1)
         currentComponent = alpine2;
-    else if (currentComponent === alpine2)
-        currentComponent = alpine3;
-    else if (currentComponent === alpine3)
-        currentComponent = alpine4;
+    else if (currentComponent === alpine2);
 }
 
 function manageComponent(percent, delta) {
