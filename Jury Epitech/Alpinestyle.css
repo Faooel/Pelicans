@@ -113,6 +113,7 @@ body {
 }
 
 .alpine-1 {
+    position: fixed;
     text-align: center;
     margin-top: 55px;
     position: fixed;
@@ -156,6 +157,7 @@ body {
     text-align: justify;
 }
 
+
 .alpine-img-1 {
     height: 35vw;
 }
@@ -169,6 +171,7 @@ body {
 }
 
 .alpine-2 {
+    position: fixed;
     text-align: center;
     margin-top: 55px;
     position: fixed;
