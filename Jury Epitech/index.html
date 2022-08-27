@@ -3,7 +3,9 @@
     <head>
         <title>F1 Passion</title>
         <link href="styleIndex.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="sidebarScript.js"> </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <meta lang="fr">
     </head>
     
@@ -36,11 +38,14 @@
             </article>
             
             <article class="story-f1-1">
-                <p class="story-f1-1-txt">Vitesse, duel en piste, stratégie, danger, tous ces mots peuvent résumer parfaitement la Formule 1 et le sport auto, 2004, je découvre cela le dimanche sur TF1, impressionné par ces pilotes qui roulent à des vitesses inimaginables, pour moi a l'époque.
+                <p data-aos="fade-up"
+                data-aos-duration="3000" class="story-f1-1-txt">Vitesse, duel en piste, stratégie, danger, tous ces mots peuvent résumer parfaitement la Formule 1 et le sport auto, 2004, je découvre cela le dimanche sur TF1, impressionné par ces pilotes qui roulent à des vitesses inimaginables, pour moi a l'époque.
                 </p>
-                <p class="story-f1-1-txt2">A travers tous ces nombreux pilotes, un pilote espagnol attire mon attention, avec sa voiture bleue et jaune, Fernando Alonso, sanguin, ne refusant jamais le combat, je suis tout de suite tombé amoureux de ce sport, et je suis tout de suite devenu un vrai fan boy d'Alonso ainsi qu'un fervent supporter de l'écurie Renault (Alpine aujourd'hui)
+                <p data-aos="fade-up"
+                data-aos-duration="3000" class="story-f1-1-txt2">A travers tous ces nombreux pilotes, un pilote espagnol attire mon attention, avec sa voiture bleue et jaune, Fernando Alonso, sanguin, ne refusant jamais le combat, je suis tout de suite tombé amoureux de ce sport, et je suis tout de suite devenu un vrai fan boy d'Alonso ainsi qu'un fervent supporter de l'écurie Renault (Alpine aujourd'hui)
                 </p>
-                <img class="story-f1-1-img" src="C:\Users\faooe\Documents\GitHub\Pelicans\Jury Epitech\image\AlonsoIndex.jpg">           
+                <img data-aos="fade-up"
+                data-aos-duration="3000" class="story-f1-1-img" src="C:\Users\faooe\Documents\GitHub\Pelicans\Jury Epitech\image\AlonsoIndex.jpg">           
             </article>
         
             <article class="story-f1-3">
@@ -71,8 +76,23 @@
                         <a class="overlay-senna-txt" href="C:\Users\faooe\Documents\GitHub\Pelicans\Jury Epitech\Senna.html">Ayrton Senna</a>
                     </div>
                 </div>
+
+                <div class="waveWrapper waveAnimation">
+                    <div class="waveWrapperInner bgTop">
+                        <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+                    </div>
+                    <div class="waveWrapperInner bgMiddle">
+                        <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+                    </div>
+                    <div class="waveWrapperInner bgBottom">
+                        <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+                    </div>
+                </div>
             </article>
             <script src="scrollFadingIndex.js"> </script>
+            <script>
+                AOS.init();
+            </script>
         </main>
     </body>
 </html>

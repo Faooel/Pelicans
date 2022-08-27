@@ -35,24 +35,108 @@ body {
     position: fixed;
 }
 
+.grid-item {
+    position: relative;
+    width: 30%;
+    height: auto;
+    padding: 1%;
+    float: left;
+}
+
+.grid-item.active {
+
+}
+
+.caption {
+    display: none;
+    position: absolute;
+    left: 3%;
+    bottom: 4%;
+    width: 94%;
+    line-height: 50px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.active .caption {
+    display: block;
+}
+
+.container {
+    width: 92vw;
+    height: 46vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.float-animation {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    transform: translatex(0px);
+}
+
+.float-left {
+    animation: float-left 6s ease-in-out infinite;
+}
+
+.float-right {
+    animation: float-right 6s ease-in-out infinite;
+}
+
+@keyframes float-left {
+    0% {
+        transform: translatex(0%);
+    }
+
+    50% {
+        transform: translatex(-3%);
+    }
+
+    100% {
+        transform: translatex(0%);
+    }
+}
+
+@keyframes float-right {
+    0% {
+        transform: translatex(0%);
+    }
+
+    50% {
+        transform: translatex(3%);
+    }
+
+    100% {
+        transform: translatex(0%);
+    }
+}
+
 .alonso1 {
-    height: 90vh;
+    height: 95vh;
+    width: 100vw;
     position: fixed;
     margin-top: 8vh;
 }
 
 #alonso-patchwork {
-    margin: 0% -27% 0% 15%;
+    margin: 3% 0% 0% 5%;
     line-height: 0;
     -webkit-column-count: 5;
     -webkit-column-gap:   0px;
     -moz-column-count:    5;
     -moz-column-gap:      0px;
-    column-count:         5;
-    column-gap:           0px;
+    column-count: 1;
+    column-gap: 0px;
 }
 
 #alonso-patchwork img {
+    border-radius: 5%;
     width: 100% !important;
     height: auto !important;
 }
